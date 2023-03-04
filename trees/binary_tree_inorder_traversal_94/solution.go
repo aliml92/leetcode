@@ -5,6 +5,7 @@ import (
 	. "github.com/aliml92/neetcodeall/trees"
 )
 
+// Visual walkthrough: https://upload.wikimedia.org/wikipedia/commons/4/48/Inorder-traversal.gif
 
 
 func inorderTraversal(root *TreeNode) []int {

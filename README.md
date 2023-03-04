@@ -2,7 +2,7 @@
 
 
 ## Table Of Contents
-```
+<pre><code>
 ___ 1-d_dynamic_programming
     |_____ climbing_stairs_70
     |_____ min_cost_climbing_stairs_746
@@ -43,7 +43,8 @@ ____heap_priority_queue
 
 ____trees
     |______tree.go
-    |______binary_tree_inorder_traversal_94
+    |______binary_tree_inorder_traversal_94 <a href="https://github.com/aliml92/leetcode/blob/404006c923a3eefa65b735cee70cd85d7d88eb00/trees/binary_tree_inorder_traversal_94/solution.go" target="_blank"> solution &#8599;</a> <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" target="_blank"> problem &#8599;</a>
+    |______validate_binary_search_tree_98 <a href="" target="_blank"> solution &#8599;</a> <a href="https://leetcode.com/problems/validate-binary-search-tree/" target="_blank"> problem &#8599;</a>
 
 ____two_pointers
     |______3sum_15
@@ -52,4 +53,4 @@ ____two_pointers
 ____go.mod
 ____go.sum
 ____README.md
-```
+</code></pre>
