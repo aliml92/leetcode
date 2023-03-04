@@ -3,7 +3,7 @@ My leetcode solutions in golang, including unit tests :test_tube:
 
 
 ## Project structure
-<pre>
+<pre><code>
 ___ 1-d_dynamic_programming
     |_____ climbing_stairs_70
     |_____ min_cost_climbing_stairs_746
@@ -55,5 +55,5 @@ ____two_pointers
 ____go.mod
 ____go.sum
 ____README.md
-</pre>
+</code></pre>
 
