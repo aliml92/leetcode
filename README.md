@@ -2,7 +2,7 @@
 My leetcode solutions in golang, including unit tests 🔬
 
 ## Project structure
-| folder | solution folders | solution files | problem links |
+| folder | solution folders | solution (click) | problem |
 | :--- |:--- | :---: | :---: |
 | *1-d_dynamic_programming* 🔁 | ... | |
 |  |climbing_stairs_70 | [✅](https://github.com/aliml92/leetcode/blob/9f959212064208afdf83d0cf5b46d60a24f0565f/1-d_dynamic_programming/climbing_stairs_70/solution.go) | [↗️](https://leetcode.com/problems/climbing-stairs/) |
