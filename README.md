@@ -19,7 +19,7 @@ ____array_hashing
     |______valid_anagram_242
     |______valid_sudoku_36
 
-___ backtracking <span>:back: :footprints:</span>
+___ backtracking <span>`:back:` `:footprints:`</span>
 
 ___ binary_search <span>:v: :mag_right:</span>
     |______binary_search_704
