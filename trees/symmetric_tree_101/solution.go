@@ -1,7 +1,7 @@
 package symmetrictree101
 
 import (
-	. "github.com/aliml92/leetcode/trees"
+	. "github.com/aliml92/leetcode/datastructure"
 )
 
 func isSymmetric(root *TreeNode) bool {

@@ -1,7 +1,7 @@
 package validatebinarysearchtree98
 
 import (
-	. "github.com/aliml92/leetcode/trees"
+	. "github.com/aliml92/leetcode/datastructure"
 )
 
 func isValidBST(root *TreeNode) bool {

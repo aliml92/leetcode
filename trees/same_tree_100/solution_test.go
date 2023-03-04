@@ -3,7 +3,7 @@ package sametree100
 import (
 	"testing"
 
-	. "github.com/aliml92/leetcode/trees"
+	. "github.com/aliml92/leetcode/datastructure"
 )
 
 func Test_isSameTree(t *testing.T) {

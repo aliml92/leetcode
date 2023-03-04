@@ -1,7 +1,7 @@
 package binarytreeinordertraversal94
 
 import (
-	. "github.com/aliml92/leetcode/trees"
+	. "github.com/aliml92/leetcode/datastructure"
 )
 
 // Visual walkthrough: https://upload.wikimedia.org/wikipedia/commons/4/48/Inorder-traversal.gif

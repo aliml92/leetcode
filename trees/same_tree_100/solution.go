@@ -1,7 +1,7 @@
 package sametree100
 
 import (
-	. "github.com/aliml92/leetcode/trees"
+	. "github.com/aliml92/leetcode/datastructure"
 )
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {

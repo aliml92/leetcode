@@ -3,7 +3,7 @@ package symmetrictree101
 import (
 	"testing"
 
-	. "github.com/aliml92/leetcode/trees"
+	. "github.com/aliml92/leetcode/datastructure"
 )
 
 func Test_isSymmetric(t *testing.T) {
