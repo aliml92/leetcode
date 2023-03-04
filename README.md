@@ -1,5 +1,5 @@
 # Leetcode
-My leetcode solutins in golang, including unit tests
+My leetcode solutins in golang, including unit tests :test_tube:
 
 
 ## Project structure
