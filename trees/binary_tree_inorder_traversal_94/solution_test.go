@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/aliml92/neetcodeall/trees"
+	. "github.com/aliml92/leetcode/trees"
 )
 
 func Test_inorderTraversal(t *testing.T) {

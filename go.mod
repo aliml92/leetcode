@@ -1,3 +1,3 @@
-module github.com/aliml92/neetcodeall
+module github.com/aliml92/leetcode
 
 go 1.19

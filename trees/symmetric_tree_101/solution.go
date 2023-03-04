@@ -1,16 +1,14 @@
 package symmetrictree101
 
-
 import (
-	. "github.com/aliml92/neetcodeall/trees"
+	. "github.com/aliml92/leetcode/trees"
 )
-
 
 func isSymmetric(root *TreeNode) bool {
 	if root == nil {
 		return true
 	}
-	return issymmetric(root.Left, root.Right)   
+	return issymmetric(root.Left, root.Right)
 }
 
 func issymmetric(left *TreeNode, right *TreeNode) bool {
