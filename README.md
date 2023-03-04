@@ -1,7 +1,8 @@
-# My Leetcode Solutions 
+# Leetcode
+My leetcode solutins in golang, including unit tests
 
 
-## Table Of Contents
+## Project structure
 <pre>
 ___ 1-d_dynamic_programming
     |_____ climbing_stairs_70
@@ -42,7 +43,8 @@ ____heap_priority_queue
     |______kth_largest_element_in_a_array_215
 
 ____trees
-    |______tree.go
+    |______tree.go         // TreeNode struct, utils functions
+    |______tree_test.go    // tests and benchmarks 
     |______binary_tree_inorder_traversal_94 <a href="https://github.com/aliml92/leetcode/blob/404006c923a3eefa65b735cee70cd85d7d88eb00/trees/binary_tree_inorder_traversal_94/solution.go" target="_blank" rel="noopener noreferrer"> solution &#8599;</a> <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" target="_blank" rel="noopener noreferrer"> problem &#8599;</a>
     |______validate_binary_search_tree_98 <a href="https://github.com/aliml92/leetcode/blob/cad889cea1c74b291479ce245c10a37d5bbad484/trees/validate_binary_search_tree_98/solution.go" target="_blank" rel="noopener noreferrer"> solution &#8599;</a> <a href="https://leetcode.com/problems/validate-binary-search-tree/" target="_blank" rel="noopener noreferrer"> problem &#8599;</a>
 
@@ -54,3 +56,4 @@ ____go.mod
 ____go.sum
 ____README.md
 </pre>
+
