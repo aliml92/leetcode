@@ -1,10 +1,10 @@
 # Leetcode
-My leetcode solutions in golang, including unit tests :test_tube:
+My leetcode solutions in golang, including unit tests 🔬
 
 
 ## Project structure
 <pre>
-___ 1-d_dynamic_programming ➡🔁
+___ 1-d_dynamic_programming 🔁
     |_____ climbing_stairs_70 
     |_____ min_cost_climbing_stairs_746
 
