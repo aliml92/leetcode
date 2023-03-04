@@ -19,13 +19,13 @@ ____array_hashing
     |______valid_anagram_242
     |______valid_sudoku_36
 
-___ backtracking
+___ backtracking :back: :footprints:
 
-___ binary_search
+___ binary_search :v: :mag_right:
     |______binary_search_704
     |______search_in_rotated_sorted_array_33
 
-___ bit_manipulation
+___ bit_manipulation 
     |______number_of_1_bits_191
     |______single_number_136
 
