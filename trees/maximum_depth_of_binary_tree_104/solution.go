@@ -5,7 +5,7 @@ import (
 	. "github.com/aliml92/leetcode/datastructure"
 )
 
-func maxDepth(root *TreeNode) int {
+func maxDepthBFS(root *TreeNode) int {
 	max := -1
 	q := NewQueue[TreeNode]()
 	q.Enqueue(root)
@@ -21,4 +21,25 @@ func maxDepth(root *TreeNode) int {
 		}
 	}
 	return max
+}
+
+
+func maxDepth(root *TreeNode) int {
+    var dfs func(*TreeNode) int
+    dfs = func(root *TreeNode) int {
+        if root == nil {
+            return 0
+        }
+        left := dfs(root.Left)
+        right := dfs(root.Right)
+        return 1 + max(left, right)
+    }
+    return dfs(root)
+}
+
+func max(left, right int) int {
+    if left > right {
+        return left
+    }
+    return right
 }
