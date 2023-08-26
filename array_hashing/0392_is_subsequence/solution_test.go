@@ -2,15 +2,13 @@ package issubsequence392
 
 import "testing"
 
-
-
-func Test_isSubsequence(t *testing.T){
+func Test_isSubsequence(t *testing.T) {
 	type args struct {
 		s string
 		t string
 	}
 
-	tests := []struct{
+	tests := []struct {
 		name string
 		args args
 		want bool

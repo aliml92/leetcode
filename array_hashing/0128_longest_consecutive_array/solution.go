@@ -24,7 +24,7 @@ func longestConsecutive(nums []int) int {
 	return longest
 }
 
-func max(a,b int) int {
+func max(a, b int) int {
 	if a > b {
 		return a
 	}

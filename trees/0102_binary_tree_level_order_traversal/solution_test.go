@@ -18,8 +18,8 @@ func Test_levelOrder(t *testing.T) {
 	}{
 		{
 			"example1",
-			args{ BuildTree([]interface{}{3, 9, 20, nil, nil, 15, 7})},
-			[][]int{{3}, {9,20}, {15,7}},
+			args{BuildTree([]interface{}{3, 9, 20, nil, nil, 15, 7})},
+			[][]int{{3}, {9, 20}, {15, 7}},
 		},
 		{
 			"example2",

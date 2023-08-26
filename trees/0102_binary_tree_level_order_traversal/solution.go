@@ -5,13 +5,13 @@ import (
 )
 
 func levelOrder(root *TreeNode) [][]int {
-    res := make([][]int, 0)
+	res := make([][]int, 0)
 	q := NewQueue[TreeNode]()
 	q.Enqueue(root)
 	for q.Len() > 0 {
 		n := q.Len()
 		inner := make([]int, 0)
-		for i:=0; i < n; i++ {
+		for i := 0; i < n; i++ {
 			item := q.Dequeue()
 			if item != nil {
 				inner = append(inner, item.Val)

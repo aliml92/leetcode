@@ -12,8 +12,8 @@ func Test_search(t *testing.T) {
 		args args
 		want int
 	}{
-		{"example1", args{[]int{4,5,6,7,0,1,2}, 0}, 4},
-		{"example2", args{[]int{4,5,6,7,0,1,2}, 3}, -1},
+		{"example1", args{[]int{4, 5, 6, 7, 0, 1, 2}, 0}, 4},
+		{"example2", args{[]int{4, 5, 6, 7, 0, 1, 2}, 3}, -1},
 		{"example1", args{[]int{1}, 0}, -1},
 	}
 	for _, tt := range tests {

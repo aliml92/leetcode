@@ -14,7 +14,7 @@ func Test_generate(t *testing.T) {
 		args args
 		want [][]int
 	}{
-		{"example1", args{5}, [][]int{{1},{1,1},{1,2,1},{1,3,3,1},{1,4,6,4,1}}},
+		{"example1", args{5}, [][]int{{1}, {1, 1}, {1, 2, 1}, {1, 3, 3, 1}, {1, 4, 6, 4, 1}}},
 		{"example2", args{1}, [][]int{{1}}},
 	}
 	for _, tt := range tests {

@@ -11,8 +11,8 @@ func Test_containsDuplicate(t *testing.T) {
 		args args
 		want bool
 	}{
-		{"duplicate", args{[]int{1,2,3,1}}, true},
-		{"non-duplicate", args{[]int{1,2,3,4}}, false},
+		{"duplicate", args{[]int{1, 2, 3, 1}}, true},
+		{"non-duplicate", args{[]int{1, 2, 3, 4}}, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

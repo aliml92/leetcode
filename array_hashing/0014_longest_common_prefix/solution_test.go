@@ -2,17 +2,17 @@ package longestcommonprefix14
 
 import "testing"
 
-func Test_longestCommonPrefix(t *testing.T){
+func Test_longestCommonPrefix(t *testing.T) {
 	type args struct {
 		strs []string
 	}
-	tests := []struct{
+	tests := []struct {
 		name string
 		args args
 		want string
 	}{
-		{"example1", args{[]string{"flower","flow","flight"}}, "fl"},
-		{"example1", args{[]string{"dog","racecar","car"}}, ""},
+		{"example1", args{[]string{"flower", "flow", "flight"}}, "fl"},
+		{"example1", args{[]string{"dog", "racecar", "car"}}, ""},
 	}
 
 	for _, tt := range tests {

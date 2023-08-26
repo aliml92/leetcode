@@ -1,12 +1,12 @@
 package solution
 
 func leastBricks(wall [][]int) int {
-	m := make(map[int]int,0)
+	m := make(map[int]int, 0)
 	for _, layer := range wall {
 		pos := 0
-		brickNums := len(layer) 
+		brickNums := len(layer)
 		for i, brick := range layer {
-			if i != brickNums-1 { 
+			if i != brickNums-1 {
 				pos = pos + brick
 				m[pos]++
 			}
@@ -19,5 +19,5 @@ func leastBricks(wall [][]int) int {
 			h = v
 		}
 	}
-	return height-h
+	return height - h
 }

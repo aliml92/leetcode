@@ -13,8 +13,8 @@ func Test_ladderLength(t *testing.T) {
 		args args
 		want int
 	}{
-		{"example1", args{"hit", "cog", []string{"hot","dot","dog","lot","log","cog"}}, 5},
-		{"example1", args{"hit", "cog", []string{"hot","dot","dog","lot","log"}}, 0},
+		{"example1", args{"hit", "cog", []string{"hot", "dot", "dog", "lot", "log", "cog"}}, 5},
+		{"example1", args{"hit", "cog", []string{"hot", "dot", "dog", "lot", "log"}}, 0},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

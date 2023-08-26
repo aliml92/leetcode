@@ -2,12 +2,11 @@ package lengthoflastword58
 
 import "testing"
 
-
-func Test_lengthOfLastWord(t *testing.T){
+func Test_lengthOfLastWord(t *testing.T) {
 	type args struct {
 		s string
 	}
-	tests := []struct{
+	tests := []struct {
 		name string
 		args args
 		want int
@@ -23,5 +22,5 @@ func Test_lengthOfLastWord(t *testing.T){
 				t.Errorf("productExceptSelf() = %v, want %v", got, tt.want)
 			}
 		})
-	}  
+	}
 }

@@ -4,7 +4,6 @@ import (
 	"reflect"
 	"sort"
 	"testing"
-
 )
 
 func Test_groupAnagrams(t *testing.T) {
@@ -16,14 +15,14 @@ func Test_groupAnagrams(t *testing.T) {
 		args args
 		want [][]string
 	}{
-		{"example1", args{[]string{"eat","tea","tan","ate","nat","bat"}}, 
-		[][]string{{"bat"},{"nat","tan"},{"ate","eat","tea"}}},
+		{"example1", args{[]string{"eat", "tea", "tan", "ate", "nat", "bat"}},
+			[][]string{{"bat"}, {"nat", "tan"}, {"ate", "eat", "tea"}}},
 		{"example2", args{[]string{""}}, [][]string{{""}}},
 		{"example2", args{[]string{"a"}}, [][]string{{"a"}}},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			got := groupAnagrams(tt.args.strs);
+			got := groupAnagrams(tt.args.strs)
 			// Sort inner slices.
 			for _, s := range tt.want {
 				sort.Strings(s)
@@ -33,16 +32,15 @@ func Test_groupAnagrams(t *testing.T) {
 			}
 			sort.Sort(sortSlice(tt.want))
 			sort.Sort(sortSlice(got))
-			if  !reflect.DeepEqual(got, tt.want) {
+			if !reflect.DeepEqual(got, tt.want) {
 				t.Errorf("groupAnagrams() = %v, want %v", got, tt.want)
 			}
 		})
 	}
 }
 
-
-
 type sortSlice [][]string
+
 func (s sortSlice) Len() int      { return len(s) }
 func (s sortSlice) Swap(a, b int) { s[a], s[b] = s[b], s[a] }
 func (s sortSlice) Less(a, b int) bool {

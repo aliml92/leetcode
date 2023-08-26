@@ -20,10 +20,10 @@ func Test_buildTree(t *testing.T) {
 		{
 			"example1",
 			args{
-				[]int{3,9,20,15,7},
-				[]int{9,3,15,20,7},
+				[]int{3, 9, 20, 15, 7},
+				[]int{9, 3, 15, 20, 7},
 			},
-			BuildTree([]interface{}{3,9,20,nil,nil,15,7}),
+			BuildTree([]interface{}{3, 9, 20, nil, nil, 15, 7}),
 		},
 	}
 	for _, tt := range tests {

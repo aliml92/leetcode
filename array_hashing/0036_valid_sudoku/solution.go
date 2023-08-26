@@ -1,14 +1,13 @@
 package validsudoku36
 
-
 func isValidSudoku(board [][]byte) bool {
-    if (isRowValid(board) && isColValid(board) && isBoxValid(board)) {
+	if isRowValid(board) && isColValid(board) && isBoxValid(board) {
 		return true
 	}
 	return false
 }
 
-func isRowValid( board [][]byte ) bool {
+func isRowValid(board [][]byte) bool {
 	for i := 0; i < 9; i++ {
 		m := make(map[byte]bool)
 		for j := 0; j < 9; j++ {
@@ -25,7 +24,7 @@ func isRowValid( board [][]byte ) bool {
 	return true
 }
 
-func isColValid( board [][]byte ) bool {
+func isColValid(board [][]byte) bool {
 	for i := 0; i < 9; i++ {
 		m := make(map[byte]bool)
 		for j := 0; j < 9; j++ {
@@ -42,7 +41,7 @@ func isColValid( board [][]byte ) bool {
 	return true
 }
 
-func isBoxValid( board [][]byte ) bool {
+func isBoxValid(board [][]byte) bool {
 	for i := 0; i < 9; i += 3 {
 		for j := 0; j < 9; j += 3 {
 			m := make(map[byte]bool)
@@ -57,9 +56,9 @@ func isBoxValid( board [][]byte ) bool {
 						m[item] = true
 					}
 				}
-			}			
+			}
 		}
 	}
-	
+
 	return true
 }

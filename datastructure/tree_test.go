@@ -47,7 +47,6 @@ func TestBuildTree(t *testing.T) {
 	}
 }
 
-
 func TestBuildTreeV2(t *testing.T) {
 	type args struct {
 		root []interface{}
@@ -86,9 +85,8 @@ func TestBuildTreeFromString(t *testing.T) {
 			}
 		})
 	}
-	
-}
 
+}
 
 func TestBuildTreeV2FromString(t *testing.T) {
 	type args struct {
@@ -110,16 +108,14 @@ func TestBuildTreeV2FromString(t *testing.T) {
 	}
 }
 
-
 func BenchmarkNewTreeNode(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		NewTreeNode(1, nil, nil)
 	}
 }
 
-
 func BenchmarkBuildTree(b *testing.B) {
-    input := []interface{}{1, 2, nil, 3, 4, nil, 5}
+	input := []interface{}{1, 2, nil, 3, 4, nil, 5}
 	for i := 0; i < b.N; i++ {
 		BuildTree(input)
 	}
@@ -132,8 +128,6 @@ func BenchmarkBuildTreeV2(b *testing.B) {
 		BuildTreeV2(input)
 	}
 }
-
-
 
 func BenchmarkBuildTreeFromString(b *testing.B) {
 	input := "[1,2,null,3,4,null,5]"
@@ -148,4 +142,3 @@ func BenchmarkBuildTreeV2FromString(b *testing.B) {
 		BuildTreeV2FromString(input)
 	}
 }
-
