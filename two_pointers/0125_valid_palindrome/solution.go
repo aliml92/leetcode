@@ -86,6 +86,7 @@ func isPalindromeSecond(s string) bool {
 	return true
 }
 
+// isPalindromeOne is designed to run very fast (Runtime: 100% 0ms, Memory: 51.49% 3.15MB)
 func isPalindromeOne(s string) bool {
 	var upperLowerDiff byte = 32 
 	var str []byte
@@ -111,4 +112,51 @@ func isPalindromeOne(s string) bool {
 	}
 
 	return true
+}
+
+// isPalindrome is designed to be memory efficient (Runtime: 64.28% 4ms, Memory: 92.17% 2.65MB)
+func isPalindrome(s string) bool {
+    i, j := 0, len(s)-1
+	for i <= j {
+		for i < len(s) && isNonAlphanumeric(s[i]) {
+			i++
+		} 
+        if i >= len(s) {
+            return true
+        }
+
+		for j >= 0 && isNonAlphanumeric(s[j]) {
+			j--
+		}
+
+        if j < 0 {
+            return true
+        }
+
+		if toLower(s[i]) != toLower(s[j]) {
+			return false
+		}
+
+		i++
+        j--
+	}
+
+	return true
+}
+
+func isNonAlphanumeric(b byte) bool {
+	if b < '0' || ('9' < b && b < 'A') ||  ('Z' < b && b < 'a') || 'z' < b {
+		return true		
+	}
+	return false
+}
+
+
+func toLower(b byte) byte {
+	if 'A' <= b && b <= 'Z' {
+		var diff byte = 32
+		return b + diff
+	}
+
+	return b
 }
